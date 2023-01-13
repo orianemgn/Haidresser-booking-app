@@ -1,0 +1,17 @@
+.appointmentCardContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.appointmentCardContainer > div > * {
+  padding: 0.2rem 0;
+}
+.appointmentCardContainer h4 {
+  color: var(--secondary-font);
+}
+
+.appointmentCardContainer i {
+  padding-right: 0.5rem;
+  color: var(--primary-color);
+}

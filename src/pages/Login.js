@@ -12,7 +12,7 @@ const Login = () => {
     console.log(email, password, passwordConfirmation);
   };
   return (
-    <div className={styles.loginContainer}>
+    <div className="page-container">
       <div className={styles.haidresserContainer}>
         <img className="logo-image" src="" alt="logo" />
         <h1>Wilkommen zurück</h1>

@@ -1,0 +1,25 @@
+.customerCardContainer {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.customerCardContainer img {
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  width: 150px;
+  height: 150px;
+}
+
+.customerCardContainer div {
+  width: 60%;
+}
+
+/*Tablet */
+@media screen and (min-width: 700px) {
+  .customerCardContainer {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,25 @@
+.appointmentContainer {
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.appointmentContainer > div {
+  padding-bottom: 1rem;
+}
+
+/*Tablet */
+@media screen and (min-width: 700px) {
+}
+
+/*Desktop menu*/
+@media screen and (min-width: 960px) {
+  .appointmentContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .appointmentContainer > div {
+    width: 48.5%;
+  }
+}

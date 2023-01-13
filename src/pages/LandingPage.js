@@ -32,7 +32,7 @@ const LandingPage = () => {
     },
   };
   return (
-    <div className={styles.landingPageContainer}>
+    <div className="page-container ">
       <div className={styles.haidresserContainer}>
         <h1>Wir Lieben Natürlichkeit</h1>
         <img className="logo-image" src="" alt="logo" />

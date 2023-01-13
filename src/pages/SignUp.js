@@ -12,7 +12,7 @@ const SignUp = () => {
     console.log(email, password, passwordConfirmation);
   };
   return (
-    <div className={styles.signUpContainer}>
+    <div className="page-container">
       <div className={styles.haidresserContainer}>
         <img className="logo-image" src="" alt="logo" />
         <h1>Dein Frisseur</h1>

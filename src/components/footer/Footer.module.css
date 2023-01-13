@@ -7,6 +7,10 @@
   font-size: 0.8rem;
 }
 
+.footer li {
+  color: var(--light-font);
+}
+
 .footer li:hover,
 .footer i:hover {
   color: var(--base-color);

@@ -71,6 +71,19 @@ p {
   background-color: var(--background-white);
 }
 
+.btn-small {
+  font-size: 0.8rem;
+  border-radius: 30px;
+  padding: 0.1rem 1.5rem;
+  border: 1px solid var(--primary-color);
+  text-decoration: none;
+}
+
+.btn-small:hover {
+  color: var(--primary-color);
+  background-color: var(--background-white);
+}
+
 .btn-primary {
   color: var(--light-font);
   background-color: var(--primary-color);
@@ -81,11 +94,28 @@ p {
   background-color: var(--background-white);
 }
 
+.btn-danger {
+  color: var(--light-font);
+  background-color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+}
+
+.btn-danger:hover {
+  color: var(--base-color);
+}
+
+.page-container {
+  width: 80%;
+  margin: auto;
+  padding: 3rem 0 10rem;
+}
+
 .container {
   box-shadow: var(--box-shadow);
   border-radius: var(--border-radius);
   padding: 1rem;
   background-color: var(--background-white);
+  margin-top: 1rem;
 }
 
 .container:hover {
