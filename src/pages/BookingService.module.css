@@ -13,6 +13,11 @@
   margin-bottom: 1rem;
 }
 
+.buttonsContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 /*Tablet */
 @media screen and (min-width: 700px) {
   .bookingServiceContainer {

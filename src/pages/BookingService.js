@@ -4,10 +4,13 @@ import ServiceCard from "../components/serviceCard/ServiceCard";
 
 const BookingService = () => {
   const [isOpenStyle, setIsOpenStyle] = useState(false);
+  const [selectedService, setSelectedService] = useState(null);
 
   const handleOpenStyle = () => {
     setIsOpenStyle(!isOpenStyle);
   };
+
+  console.log("SELECTED", selectedService);
   let services = [
     {
       name: "Cutting & Styling",
@@ -41,13 +44,28 @@ const BookingService = () => {
                   {service.name} <i class="fa-solid fa-play"></i>
                 </h4>
                 {service.service.map((el, id) => {
-                  return isOpenStyle && <ServiceCard service={el} key={id} />;
+                  return (
+                    isOpenStyle && (
+                      <ServiceCard
+                        service={el}
+                        key={id}
+                        setSelectedService={setSelectedService}
+                      />
+                    )
+                  );
                 })}
               </>
             );
           })}
         </div>
-        <div className="container"></div>
+        <div className="container">
+          <h4>Ihre Auswahl</h4>
+          {selectedService && <ServiceCard service={selectedService} />}
+          <div className={styles.buttonsContainer}>
+            <button className="btn btn-danger">Cancel</button>
+            <button className="btn btn-primary">Next step</button>
+          </div>
+        </div>
       </div>
     </div>
   );
