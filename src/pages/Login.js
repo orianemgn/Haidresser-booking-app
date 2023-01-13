@@ -1,9 +1,9 @@
 import React from "react";
+import styles from "./Login.module.css";
 import { Link } from "react-router-dom";
-import styles from "./SignUp.module.css";
 
-const SignUp = () => {
-  const handleSignUpSubmit = (e) => {
+const Login = () => {
+  const handleLogin = (e) => {
     e.preventDefault();
     let email = e.target.email.value;
     let password = e.target.password.value;
@@ -12,38 +12,34 @@ const SignUp = () => {
     console.log(email, password, passwordConfirmation);
   };
   return (
-    <div className={styles.signUpContainer}>
+    <div className={styles.loginContainer}>
       <div className={styles.haidresserContainer}>
         <img className="logo-image" src="" alt="logo" />
-        <h1>Dein Frisseur</h1>
-        <p>Registriere dich, um alle Funktionen nutzen zu können</p>
+        <h1>Wilkommen zurück</h1>
+        <p>Melde dich an, um alle Funktionen nutzen zu können</p>
       </div>
-      <form
-        className={styles.signUpForm}
-        onSubmit={(e) => handleSignUpSubmit(e)}
-      >
+      <form className={styles.loginForm} onSubmit={(e) => handleLogin(e)}>
         <input type="email" name="email" id="email" placeholder="Email" />
         <input
           type="text"
           name="password"
           id="password"
-          placeholder="&#xf0e0; Password"
-        />
-        <input
-          type="text"
-          name="passwordConfirmation"
-          id="passwordConfirmation"
-          placeholder="password confirmation"
+          placeholder="Password"
         />
         <button className="btn btn-primary" type="submit">
-          Termin Buchen
+          Anmelden
         </button>
-        <Link className="link-primary" to="/login">
-          Du hast bereits einen Account
-        </Link>
+        <div className={styles.loginLinks}>
+          <Link className="link-primary" to="/signup">
+            Du bist neu hier?
+          </Link>
+          <Link className="link-primary" to="/">
+            Forgot password?
+          </Link>
+        </div>
       </form>
     </div>
   );
 };
 
-export default SignUp;
+export default Login;

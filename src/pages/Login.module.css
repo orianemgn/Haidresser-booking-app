@@ -1,0 +1,46 @@
+.loginContainer {
+  width: 80%;
+  margin: auto;
+  padding: 3rem 0 10rem;
+}
+
+.haidresserContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.haidresserContainer > * {
+  margin: 0.5rem auto;
+}
+
+.loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.loginForm > * {
+  margin: 1rem auto;
+}
+
+.loginForm input[type="text"],
+.loginForm input[type="email"] {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+.loginLinks > * {
+  margin: 0 1rem;
+}
+
+/*Tablet */
+@media screen and (min-width: 700px) {
+  .loginForm input[type="text"],
+  .loginForm input[type="email"] {
+    width: 40%;
+  }
+}
