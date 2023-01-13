@@ -63,6 +63,7 @@ p {
   border-radius: 30px;
   padding: 0.6rem 2rem;
   border: 1px solid var(--primary-color);
+  text-decoration: none;
 }
 
 .btn:hover {

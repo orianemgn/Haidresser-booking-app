@@ -3,6 +3,7 @@ import styles from "./LandingPage.module.css";
 import HairdresserContactInfos from "../components/HairdresserContactInfos";
 import HairdresserOpenings from "../components/HairdresserOpenings";
 import HairdresserAdresse from "../components/HairdresserAdresse";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   let hairdresserInfos = {
@@ -35,7 +36,9 @@ const LandingPage = () => {
       <div className={styles.haidresserContainer}>
         <h1>Wir Lieben Natürlichkeit</h1>
         <img src="" alt="logo" />
-        <button className="btn btn-primary">Termin buchen</button>
+        <Link className="btn btn-primary" to="/">
+          Termin buchen
+        </Link>
       </div>
       <h2>Über uns</h2>
       <div className={styles.infosContainer}>

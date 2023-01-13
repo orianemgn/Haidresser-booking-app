@@ -1,4 +1,4 @@
-nav {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,7 +19,9 @@ ul {
   align-items: center;
 }
 
-li {
+ul > * {
   list-style-type: none;
   padding: 0 1rem;
+  text-decoration: none;
+  color: var(--base-color);
 }
