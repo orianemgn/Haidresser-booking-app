@@ -1,0 +1,23 @@
+.styleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  margin: 1rem auto;
+  border: 0.5px solid #d9d9d9;
+  border-radius: var(--border-radius);
+  transition: transform 0.2s; /* Animation */
+}
+
+.styleContainer:hover {
+  background-color: var(--background);
+  transform: scale(1.02);
+}
+
+.styleContainer i {
+  color: var(--primary-color);
+}
+
+.styleContainer > div > :last-child {
+  color: #d9d9d9;
+}

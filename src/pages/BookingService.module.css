@@ -1,0 +1,24 @@
+.bookingServiceContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.bookingServiceContainer > * {
+  width: 100%;
+}
+
+.bookingServiceContainer h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+/*Tablet */
+@media screen and (min-width: 700px) {
+  .bookingServiceContainer {
+    flex-direction: row;
+  }
+  .bookingServiceContainer > * {
+    width: 48.5%;
+  }
+}
