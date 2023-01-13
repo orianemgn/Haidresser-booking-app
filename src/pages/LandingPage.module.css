@@ -15,13 +15,6 @@
   margin: 2rem auto;
 }
 
-.haidresserContainer > img {
-  border-radius: 50%;
-  background-color: var(--primary-color);
-  width: 200px;
-  height: 200px;
-}
-
 .infosContainer {
   display: flex;
   flex-direction: column;

@@ -95,3 +95,20 @@ p {
 .link:hover {
   color: var(--primary-color);
 }
+
+.link-primary {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.link-primary:hover {
+  text-decoration: underline;
+}
+
+.logo-image {
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  width: 200px;
+  height: 200px;
+}

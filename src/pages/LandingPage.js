@@ -35,7 +35,7 @@ const LandingPage = () => {
     <div className={styles.landingPageContainer}>
       <div className={styles.haidresserContainer}>
         <h1>Wir Lieben Natürlichkeit</h1>
-        <img src="" alt="logo" />
+        <img className="logo-image" src="" alt="logo" />
         <Link className="btn btn-primary" to="/">
           Termin buchen
         </Link>

@@ -1,0 +1,42 @@
+.signUpContainer {
+  width: 80%;
+  margin: auto;
+  padding: 3rem 0 10rem;
+}
+
+.haidresserContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.haidresserContainer > * {
+  margin: 0.5rem auto;
+}
+
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+}
+
+.signUpForm > * {
+  margin: 1rem auto;
+}
+
+.signUpForm input[type="text"],
+.signUpForm input[type="email"] {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  resize: vertical;
+}
+
+/*Tablet */
+@media screen and (min-width: 700px) {
+  .signUpForm input[type="text"],
+  .signUpForm input[type="email"] {
+    width: 40%;
+  }
+}
