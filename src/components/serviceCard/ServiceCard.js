@@ -4,6 +4,7 @@ import styles from "./ServiceCard.module.css";
 const ServiceCard = (props) => {
   const { style, price, time } = props.service;
   const { setSelectedService } = props;
+
   return (
     <div
       className={styles.styleContainer}
@@ -14,7 +15,7 @@ const ServiceCard = (props) => {
         <p>{price}</p>
         <p>{time}</p>
       </div>
-      <i class="fa-solid fa-circle-plus"></i>
+      {props.icon && <i class={props.icon}></i>}
     </div>
   );
 };

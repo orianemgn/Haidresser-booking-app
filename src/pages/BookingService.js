@@ -48,6 +48,7 @@ const BookingService = () => {
                     isOpenStyle && (
                       <ServiceCard
                         service={el}
+                        icon="fa-solid fa-circle-plus"
                         key={id}
                         setSelectedService={setSelectedService}
                       />
@@ -60,7 +61,16 @@ const BookingService = () => {
         </div>
         <div className="container">
           <h4>Ihre Auswahl</h4>
-          {selectedService && <ServiceCard service={selectedService} />}
+          <div>
+            <div onClick={() => setSelectedService(null)}>
+              {selectedService && (
+                <ServiceCard
+                  service={selectedService}
+                  icon="fa-solid fa-circle-minus"
+                />
+              )}
+            </div>
+          </div>
           <div className={styles.buttonsContainer}>
             <button className="btn btn-danger">Cancel</button>
             <button className="btn btn-primary">Next step</button>
