@@ -2,6 +2,7 @@ import React from "react";
 import AppointmentCard from "../components/appointmentCard/AppointmentCard";
 import CustomerCard from "../components/customerCard/CustomerCard";
 import styles from "./CustomerAccount.module.css";
+import { Link } from "react-router-dom";
 
 const CustomerAccount = () => {
   let customer = {
@@ -38,7 +39,12 @@ const CustomerAccount = () => {
 
   return (
     <div className="page-container">
-      <h1>Mein Account</h1>
+      <div className={styles.accountHeader}>
+        <h1>Mein Account</h1>
+        <Link className="btn btn-primary" to="/">
+          Termin buchen
+        </Link>
+      </div>
       <h2>Meine Daten</h2>
       <CustomerCard infos={customer} />
       <div className={styles.appointmentContainer}>
