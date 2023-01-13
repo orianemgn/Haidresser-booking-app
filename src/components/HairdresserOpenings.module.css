@@ -1,0 +1,27 @@
+/*Mobile */
+.openingsContainer {
+  width: 100%;
+}
+
+.openingsContainer table {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.openingsContainer td:nth-child(1) {
+  width: 40%;
+}
+
+/*Tablet */
+@media screen and (min-width: 700px) {
+  .openingsContainer {
+    width: 48.5%;
+  }
+}
+
+/*Desktop menu*/
+@media screen and (min-width: 960px) {
+  .openingsContainer {
+    width: 48.5%;
+  }
+}
