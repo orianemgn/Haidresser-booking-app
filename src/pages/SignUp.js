@@ -35,9 +35,9 @@ const SignUp = () => {
           id="passwordConfirmation"
           placeholder="password confirmation"
         />
-        <button className="btn btn-primary" type="submit">
-          Termin Buchen
-        </button>
+        <Link to="/account" className="btn btn-primary" type="submit">
+          Konto erstellen
+        </Link>
         <Link className="link-primary" to="/login">
           Du hast bereits einen Account
         </Link>

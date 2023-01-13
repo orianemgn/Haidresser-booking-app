@@ -59,6 +59,7 @@ p {
   font-size: 1rem;
 }
 
+/*For button*/
 .btn {
   border-radius: 30px;
   padding: 0.6rem 2rem;
@@ -69,6 +70,10 @@ p {
 .btn:hover {
   color: var(--primary-color);
   background-color: var(--background-white);
+}
+
+.btn i {
+  padding-right: 0.8rem;
 }
 
 .btn-small {

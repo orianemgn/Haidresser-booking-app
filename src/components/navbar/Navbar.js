@@ -1,11 +1,14 @@
 import React from "react";
 import styles from "./Navbar.module.css";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <nav className={styles.nav}>
-      <img src="" alt="logo" />
+      <Link to="/">
+        <i class="fa-solid fa-scissors"></i>
+      </Link>
+
       <ul>
         <NavLink className="link" to="/login">
           Login

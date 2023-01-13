@@ -26,9 +26,9 @@ const Login = () => {
           id="password"
           placeholder="Password"
         />
-        <button className="btn btn-primary" type="submit">
+        <Link to="/account" className="btn btn-primary" type="submit">
           Anmelden
-        </button>
+        </Link>
         <div className={styles.loginLinks}>
           <Link className="link-primary" to="/signup">
             Du bist neu hier?

@@ -7,11 +7,9 @@
   padding: 2rem 0;
 }
 
-.nav img {
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-  background-color: var(--primary-color);
+.nav i {
+  color: var(--primary-color);
+  font-size: 1.5rem;
 }
 
 ul {

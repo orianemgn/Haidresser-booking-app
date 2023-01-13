@@ -37,7 +37,7 @@ const LandingPage = () => {
         <h1>Wir Lieben Natürlichkeit</h1>
         <img className="logo-image" src="" alt="logo" />
         <Link className="btn btn-primary" to="/">
-          Termin buchen
+          <i class="fa-regular fa-calendar"></i>Termin buchen
         </Link>
       </div>
       <h2>Über uns</h2>
