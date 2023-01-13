@@ -65,6 +65,11 @@ p {
   border: 1px solid var(--primary-color);
 }
 
+.btn:hover {
+  color: var(--primary-color);
+  background-color: var(--background-white);
+}
+
 .btn-primary {
   color: var(--light-font);
   background-color: var(--primary-color);
@@ -84,4 +89,8 @@ p {
 
 .container:hover {
   box-shadow: var(--box-shadow-hover);
+}
+
+.link:hover {
+  color: var(--primary-color);
 }
