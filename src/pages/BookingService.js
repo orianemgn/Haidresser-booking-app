@@ -64,7 +64,9 @@ const BookingService = () => {
         <div className="container">
           <h4>Ihre Auswahl</h4>
           <div>
-            {!selectedService && <p>Select a service</p>}
+            {!selectedService && (
+              <p className={styles.selectItemText}>Select a service</p>
+            )}
             <div onClick={() => setSelectedService(null)}>
               {selectedService && (
                 <ServiceItem
@@ -80,10 +82,7 @@ const BookingService = () => {
               Go back
             </Link>
             {selectedService && (
-              <Link
-                to="/booking-service/booking-employee"
-                className="btn btn-primary"
-              >
+              <Link to="/booking-employee" className="btn btn-primary">
                 Next step
               </Link>
             )}

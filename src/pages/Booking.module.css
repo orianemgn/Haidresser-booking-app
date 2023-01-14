@@ -8,9 +8,10 @@
   width: 100%;
 }
 
-.bookingContainer h4 {
-  color: var(--primary-color);
+.bookingContainer .selectItemText {
+  font-size: 0.8rem;
   margin-bottom: 1rem;
+  text-align: center;
 }
 
 .buttonsContainer {
@@ -22,6 +23,14 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.uniqueContainer {
+  justify-content: center;
+}
+
+.center {
+  text-align: center;
 }
 
 /*Tablet */

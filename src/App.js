@@ -5,6 +5,8 @@ import Login from "./pages/Login";
 import CustomerAccount from "./pages/CustomerAccount";
 import BookingService from "./pages/BookingService";
 import BookingEmployee from "./pages/BookingEmployee";
+import BookingCalendar from "./pages/BookingCalendar";
+import BookingConfirmation from "./pages/BookingConfirmation";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -20,9 +22,11 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/account" element={<CustomerAccount />} />
           <Route path="/booking-service" element={<BookingService />} />
+          <Route path="/booking-employee" element={<BookingEmployee />} />
+          <Route path="/booking-calendar" element={<BookingCalendar />} />
           <Route
-            path="/booking-service/booking-employee"
-            element={<BookingEmployee />}
+            path="/booking-confirmation"
+            element={<BookingConfirmation />}
           />
         </Routes>
       </Router>

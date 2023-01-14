@@ -1,11 +1,14 @@
 import { useState } from "react";
 import styles from "./Booking.module.css";
 import { Link } from "react-router-dom";
+import ServiceItem from "../components/bookingCards/ServiceItem";
 import EmployeeItem from "../components/bookingCards/EmployeeItem";
 import EmployeeCard from "../components/employeeCard/EmployeeCard";
 
 const BookingEmployee = () => {
   const [selectedEmployee, setSelectedEmployee] = useState(null);
+
+  let service = { style: "style 1", price: "45€", time: "30min" };
   let employees = [
     {
       name: "John",
@@ -43,7 +46,10 @@ const BookingEmployee = () => {
         <div className="container">
           <h4>Ihre Auswahl</h4>
           <div>
-            {!selectedEmployee && <p>Select a service</p>}
+            <ServiceItem service={service} />
+            {!selectedEmployee && (
+              <p className={styles.selectItemText}>Select a employee</p>
+            )}
             <div onClick={() => setSelectedEmployee(null)}>
               {selectedEmployee && (
                 <EmployeeItem
@@ -59,10 +65,7 @@ const BookingEmployee = () => {
               Go back
             </Link>
             {selectedEmployee && (
-              <Link
-                to="/booking-service/booking-employee/"
-                className="btn btn-primary"
-              >
+              <Link to="/booking-calendar" className="btn btn-primary">
                 Next step
               </Link>
             )}
