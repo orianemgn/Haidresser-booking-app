@@ -7,6 +7,8 @@ const BookingService = () => {
   const [isOpenStyle, setIsOpenStyle] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
 
+  //for later - make a component from Ihre Auswahl - it's the same stuffs in 3/4 pages
+
   //is opening everything and not only one service - to correct later
   const handleOpenStyle = () => {
     setIsOpenStyle(!isOpenStyle);

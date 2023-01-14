@@ -1,15 +1,6 @@
 /*Mobile */
 .contactContainer {
   width: 100%;
-}
-
-.contactContainer > div {
-  padding: 1rem;
-}
-
-.contactContainer > div:hover {
-  background-color: var(--background);
-  border-radius: var(--border-radius);
   padding: 1rem;
 }
 

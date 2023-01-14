@@ -1,0 +1,27 @@
+/*Mobile */
+.contactInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  width: 100%;
+}
+.contactInfo > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactInfo > div > i {
+  padding-right: 2rem;
+}
+
+.contactInfo i {
+  color: var(--primary-color);
+}
+
+.contactInfo:hover {
+  background-color: var(--background);
+  border-radius: var(--border-radius);
+  padding: 1.1rem;
+}
