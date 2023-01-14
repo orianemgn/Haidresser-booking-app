@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./BookingService.module.css";
-import ServiceCard from "../components/serviceCard/ServiceCard";
+import ServiceCard from "../components/bookingCards/ServiceCard";
+import { Link } from "react-router-dom";
 
 const BookingService = () => {
   const [isOpenStyle, setIsOpenStyle] = useState(false);
@@ -62,18 +63,29 @@ const BookingService = () => {
         <div className="container">
           <h4>Ihre Auswahl</h4>
           <div>
+            {!selectedService && <p>Select a service</p>}
             <div onClick={() => setSelectedService(null)}>
               {selectedService && (
                 <ServiceCard
                   service={selectedService}
                   icon="fa-solid fa-circle-minus"
+                  danger="danger"
                 />
               )}
             </div>
           </div>
           <div className={styles.buttonsContainer}>
-            <button className="btn btn-danger">Cancel</button>
-            <button className="btn btn-primary">Next step</button>
+            <Link to="/" className="btn btn-danger">
+              Go back
+            </Link>
+            {selectedService && (
+              <Link
+                to="/booking-service/booking-employee"
+                className="btn btn-primary"
+              >
+                Next step
+              </Link>
+            )}
           </div>
         </div>
       </div>

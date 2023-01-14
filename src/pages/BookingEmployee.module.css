@@ -1,0 +1,29 @@
+.BookingEmployeeContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.BookingEmployeeContainer > * {
+  width: 100%;
+}
+
+.BookingEmployeeContainer h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*Tablet */
+@media screen and (min-width: 700px) {
+  .BookingEmployeeContainer {
+    flex-direction: row;
+  }
+  .BookingEmployeeContainer > * {
+    width: 48.5%;
+  }
+}

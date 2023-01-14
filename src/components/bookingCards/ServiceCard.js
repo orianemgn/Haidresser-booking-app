@@ -15,7 +15,7 @@ const ServiceCard = (props) => {
         <p>{price}</p>
         <p>{time}</p>
       </div>
-      {props.icon && <i class={props.icon}></i>}
+      {props.icon && <i className={props.icon}></i>}
     </div>
   );
 };
