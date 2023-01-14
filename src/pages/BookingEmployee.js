@@ -40,7 +40,7 @@ const BookingEmployee = () => {
             </div>
           </div>
           <div className={styles.buttonsContainer}>
-            <Link to="/" className="btn btn-danger">
+            <Link to="/booking-service" className="btn btn-danger">
               Go back
             </Link>
 
