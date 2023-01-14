@@ -12,14 +12,18 @@
   font-size: 1.5rem;
 }
 
-ul {
+.nav div {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-ul > * {
+.nav div > * {
   list-style-type: none;
-  padding: 0 1rem;
   text-decoration: none;
   color: var(--base-color);
+}
+
+.nav div > *:first-child {
+  margin-right: 1rem;
 }

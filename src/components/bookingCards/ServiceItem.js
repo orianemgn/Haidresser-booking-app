@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./BookingCards.module.css";
 
-const ServiceCard = (props) => {
+const ServiceItem = (props) => {
   const { style, price, time } = props.service;
   const { setSelectedService } = props;
 
@@ -20,4 +20,4 @@ const ServiceCard = (props) => {
   );
 };
 
-export default ServiceCard;
+export default ServiceItem;

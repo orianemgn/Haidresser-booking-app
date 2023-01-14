@@ -1,0 +1,25 @@
+.employeeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+
+.employeeCard > * {
+  padding: 0.5rem;
+}
+
+.employeeImg {
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  width: 100px;
+  height: 100px;
+}
+
+/*Tablet */
+@media screen and (min-width: 700px) {
+  .employeeCard {
+    width: 30%;
+  }
+}

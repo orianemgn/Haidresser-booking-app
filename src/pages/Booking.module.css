@@ -1,0 +1,44 @@
+.bookingContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.bookingContainer > * {
+  width: 100%;
+}
+
+.bookingContainer h4 {
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.buttonsContainer {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.employeeCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Tablet */
+@media screen and (min-width: 700px) {
+  .bookingContainer {
+    flex-direction: row;
+  }
+  .bookingContainer > * {
+    width: 48.5%;
+  }
+
+  .employeeCardContainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+/*Desktop menu*/
+@media screen and (min-width: 960px) {
+}

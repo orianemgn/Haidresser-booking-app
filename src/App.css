@@ -113,6 +113,7 @@ p {
   width: 80%;
   margin: auto;
   padding: 3rem 0 10rem;
+  min-height: 87vh;
 }
 
 .container {
@@ -120,7 +121,7 @@ p {
   border-radius: var(--border-radius);
   padding: 1rem;
   background-color: var(--background-white);
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 
 .container:hover {

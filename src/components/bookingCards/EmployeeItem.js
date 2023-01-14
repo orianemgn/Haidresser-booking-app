@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./BookingCards.module.css";
 
-const EmployeeCard = (props) => {
+const EmployeeItem = (props) => {
   const { name } = props.employee;
   const { setSelectedEmployee } = props;
 
@@ -16,4 +16,4 @@ const EmployeeCard = (props) => {
   );
 };
 
-export default EmployeeCard;
+export default EmployeeItem;

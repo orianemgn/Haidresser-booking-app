@@ -1,12 +1,13 @@
 import { useState } from "react";
-import styles from "./BookingService.module.css";
-import ServiceCard from "../components/bookingCards/ServiceCard";
+import styles from "./Booking.module.css";
+import ServiceItem from "../components/bookingCards/ServiceItem";
 import { Link } from "react-router-dom";
 
 const BookingService = () => {
   const [isOpenStyle, setIsOpenStyle] = useState(false);
   const [selectedService, setSelectedService] = useState(null);
 
+  //is opening everything and not only one service - to correct later
   const handleOpenStyle = () => {
     setIsOpenStyle(!isOpenStyle);
   };
@@ -36,7 +37,7 @@ const BookingService = () => {
   return (
     <div className="page-container">
       <h1>Unsere Service</h1>
-      <div className={styles.bookingServiceContainer}>
+      <div className={styles.bookingContainer}>
         <div className="container">
           {services.map((service, id) => {
             return (
@@ -47,7 +48,7 @@ const BookingService = () => {
                 {service.service.map((el, id) => {
                   return (
                     isOpenStyle && (
-                      <ServiceCard
+                      <ServiceItem
                         service={el}
                         icon="fa-solid fa-circle-plus"
                         key={id}
@@ -66,7 +67,7 @@ const BookingService = () => {
             {!selectedService && <p>Select a service</p>}
             <div onClick={() => setSelectedService(null)}>
               {selectedService && (
-                <ServiceCard
+                <ServiceItem
                   service={selectedService}
                   icon="fa-solid fa-circle-minus"
                   danger="danger"

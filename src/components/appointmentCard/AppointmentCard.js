@@ -21,7 +21,7 @@ const AppointmentCard = (props) => {
         className={
           passt === false ? `btn-small btn-danger` : `btn-small btn-primary`
         }
-        to="/"
+        to={passt && "/booking-service"}
       >
         {passt === false ? "cancel" : "book again"}
       </Link>

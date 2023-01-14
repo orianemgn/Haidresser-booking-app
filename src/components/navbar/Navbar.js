@@ -9,14 +9,14 @@ const Navbar = () => {
         <i class="fa-solid fa-scissors"></i>
       </Link>
 
-      <ul>
+      <div>
         <NavLink className="link" to="/login">
           Login
         </NavLink>
         <NavLink className="btn" to="/signup">
           Sign up
         </NavLink>
-      </ul>
+      </div>
     </nav>
   );
 };
