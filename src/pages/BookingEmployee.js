@@ -1,9 +1,10 @@
-import React from "react";
+import { useState } from "react";
 import styles from "./BookingEmployee.module.css";
 import { Link } from "react-router-dom";
 import EmployeeCard from "../components/bookingCards/EmployeeCard";
 
 const BookingEmployee = () => {
+  const [selectedEmployee, setSelectedEmployee] = useState(null);
   let employees = [
     { name: "John", description: "John blblabla" },
     { name: "Marie", description: "sojdzjzodjzzoj" },
@@ -15,11 +16,29 @@ const BookingEmployee = () => {
         <div className="container">
           <h4>Employees</h4>
           {employees.map((employee, id) => {
-            return <EmployeeCard employee={employee} key={id} />;
+            return (
+              <EmployeeCard
+                employee={employee}
+                icon="fa-solid fa-circle-plus"
+                key={id}
+                setSelectedEmployee={setSelectedEmployee}
+              />
+            );
           })}
         </div>
         <div className="container">
-          <div></div>
+          <div>
+            {!selectedEmployee && <p>Select a service</p>}
+            <div onClick={() => setSelectedEmployee(null)}>
+              {selectedEmployee && (
+                <EmployeeCard
+                  employee={selectedEmployee}
+                  icon="fa-solid fa-circle-minus"
+                  danger="danger"
+                />
+              )}
+            </div>
+          </div>
           <div className={styles.buttonsContainer}>
             <Link to="/" className="btn btn-danger">
               Go back

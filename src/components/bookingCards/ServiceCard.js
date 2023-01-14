@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./ServiceCard.module.css";
+import styles from "./BookingCards.module.css";
 
 const ServiceCard = (props) => {
   const { style, price, time } = props.service;
@@ -7,7 +7,7 @@ const ServiceCard = (props) => {
 
   return (
     <div
-      className={styles.styleContainer}
+      className={styles.bookingContainer}
       onClick={() => setSelectedService({ style, price, time })}
     >
       <p>{style}</p>
