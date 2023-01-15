@@ -9,6 +9,7 @@ import BookingService from "./pages/booking/BookingService";
 import BookingEmployee from "./pages/booking/BookingEmployee";
 import BookingCalendar from "./pages/booking/BookingCalendar";
 import BookingConfirmation from "./pages/booking/BookingConfirmation";
+import StoreSetup from "./pages/setup/StoreSetup";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -32,6 +33,7 @@ function App() {
           />
           <Route path="/admin-login" element={<AdminLogin />} />
           <Route path="admin-signup" element={<AdminSignUp />} />
+          <Route path="store-setup" element={<StoreSetup />} />
         </Routes>
         <Footer />
       </Router>

@@ -1,0 +1,68 @@
+.setUpForm {
+  width: 80%;
+  margin: auto;
+}
+
+.setUpForm input[type="text"],
+.setUpForm input[type="number"],
+.setUpForm input[type="file"],
+.setUpForm textarea,
+.setUpForm select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.col30,
+.col70,
+.col50 {
+  float: none;
+  width: 100%;
+  margin-top: 0;
+}
+
+/*.setUpForm input[type="number"],
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+.setUpForm input[type="number"],
+input[type="submit"] {
+  margin-top: 1rem;
+  cursor: pointer;
+  width: 10rem;
+}
+
+.setUpForm input[type="number"],
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+*/
+
+@media screen and (min-width: 760px) {
+  .col30 {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
+  }
+
+  .col70 {
+    float: left;
+    width: 80%;
+    margin-top: 6px;
+  }
+
+  .col50 {
+    float: left;
+    width: 49%;
+    margin-top: 6px;
+  }
+
+  .col50:first-child {
+    margin-right: 2%;
+  }
+}
