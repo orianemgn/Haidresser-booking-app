@@ -22,7 +22,20 @@ const BookingConfirmation = () => {
     <div className="page-container">
       <h1 className={styles.center}>Your booking confirmation</h1>
       {confirmed ? (
-        <AppointmentConfirmation />
+        <>
+          <AppointmentConfirmation />
+          <div className={styles.buttonsContainer}>
+            <Link to="/" className="btn btn-danger">
+              Cancel
+            </Link>
+            <Link to="/" className="btn btn-primary">
+              Home
+            </Link>
+            <Link to="/booking-employee" className="btn btn-primary">
+              My account
+            </Link>
+          </div>
+        </>
       ) : (
         <div className={`${styles.bookingContainer} ${styles.uniqueContainer}`}>
           <div className="container">
