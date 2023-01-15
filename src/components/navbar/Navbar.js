@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <nav className={styles.nav}>
       <Link to="/">
-        <i class="fa-solid fa-scissors"></i>
+        <i className="fa-solid fa-scissors"></i>
       </Link>
 
       <div>

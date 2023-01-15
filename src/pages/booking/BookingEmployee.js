@@ -1,10 +1,9 @@
 import { useState } from "react";
 import styles from "./Booking.module.css";
 import { Link } from "react-router-dom";
-import ServiceItem from "../components/bookingCards/ServiceItem";
-import EmployeeItem from "../components/bookingCards/EmployeeItem";
-import EmployeeCard from "../components/employeeCard/EmployeeCard";
-import SelectionCard from "../components/selectionCard/SelectionCard";
+import EmployeeItem from "../../components/bookingCards/EmployeeItem";
+import EmployeeCard from "../../components/employeeCard/EmployeeCard";
+import SelectionCard from "../../components/selectionCard/SelectionCard";
 
 const BookingEmployee = () => {
   const [selectedEmployee, setSelectedEmployee] = useState(null);

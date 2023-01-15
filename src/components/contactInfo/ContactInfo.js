@@ -5,13 +5,13 @@ const contactInfo = (props) => {
   return (
     <div className={styles.contactInfo}>
       <div>
-        <i class={icon}></i>
+        <i className={icon}></i>
         <div>
           <h3>{title}</h3>
           <p>{info}</p>
         </div>
       </div>
-      <i class="fa-solid fa-chevron-right"></i>
+      <i className="fa-solid fa-chevron-right"></i>
     </div>
   );
 };

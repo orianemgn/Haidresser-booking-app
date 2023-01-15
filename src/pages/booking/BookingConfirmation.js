@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import ServiceItem from "../components/bookingCards/ServiceItem";
-import EmployeeItem from "../components/bookingCards/EmployeeItem";
+import ServiceItem from "../../components/bookingCards/ServiceItem";
+import EmployeeItem from "../../components/bookingCards/EmployeeItem";
 import styles from "./Booking.module.css";
-import AppointmentConfirmation from "../components/appointmentConfirmation/AppointmentConfirmation";
+import AppointmentConfirmation from "../../components/appointmentConfirmation/AppointmentConfirmation";
 
 const BookingConfirmation = () => {
   const [confirmed, setConfirmed] = useState(false);

@@ -2,11 +2,13 @@ import "./App.css";
 import LandingPage from "./pages/LandingPage";
 import SignUp from "./pages/registration/customer/SignUp";
 import Login from "./pages/registration/customer/Login";
+import AdminSignUp from "./pages/registration/admin/AdminSignUp";
+import AdminLogin from "./pages/registration/admin/AdminLogin";
 import CustomerAccount from "./pages/CustomerAccount";
-import BookingService from "./pages/BookingService";
-import BookingEmployee from "./pages/BookingEmployee";
-import BookingCalendar from "./pages/BookingCalendar";
-import BookingConfirmation from "./pages/BookingConfirmation";
+import BookingService from "./pages/booking/BookingService";
+import BookingEmployee from "./pages/booking/BookingEmployee";
+import BookingCalendar from "./pages/booking/BookingCalendar";
+import BookingConfirmation from "./pages/booking/BookingConfirmation";
 import Navbar from "./components/navbar/Navbar";
 import Footer from "./components/footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -28,9 +30,11 @@ function App() {
             path="/booking-confirmation"
             element={<BookingConfirmation />}
           />
+          <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="admin-signup" element={<AdminSignUp />} />
         </Routes>
+        <Footer />
       </Router>
-      <Footer />
     </div>
   );
 }

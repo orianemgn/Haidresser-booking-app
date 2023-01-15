@@ -1,8 +1,8 @@
 import { useState } from "react";
 import styles from "./Booking.module.css";
-import ServiceItem from "../components/bookingCards/ServiceItem";
+import ServiceItem from "../../components/bookingCards/ServiceItem";
 import { Link } from "react-router-dom";
-import SelectionCard from "../components/selectionCard/SelectionCard";
+import SelectionCard from "../../components/selectionCard/SelectionCard";
 
 const BookingService = () => {
   const [isOpenStyle, setIsOpenStyle] = useState(false);
@@ -43,7 +43,7 @@ const BookingService = () => {
             return (
               <>
                 <h4 type="button" onClick={handleOpenStyle}>
-                  {service.name} <i class="fa-solid fa-play"></i>
+                  {service.name} <i className="fa-solid fa-play"></i>
                 </h4>
                 {service.service.map((el, id) => {
                   return (

@@ -42,7 +42,7 @@ const CustomerAccount = () => {
       <div className={styles.accountHeader}>
         <h1>Mein Account</h1>
         <Link className="btn btn-primary" to="/booking-service">
-          <i class="fa-regular fa-calendar"></i>Termin buchen
+          <i className="fa-regular fa-calendar"></i>Termin buchen
         </Link>
       </div>
       <h2>Meine Daten</h2>

@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "./Booking.module.css";
-import ServiceItem from "../components/bookingCards/ServiceItem";
-import EmployeeItem from "../components/bookingCards/EmployeeItem";
+import ServiceItem from "../../components/bookingCards/ServiceItem";
+import EmployeeItem from "../../components/bookingCards/EmployeeItem";
 
 const BookingCalendar = () => {
   //const [selectedTime, setSelectedTime] = useState(null);

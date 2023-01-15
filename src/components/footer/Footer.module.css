@@ -7,13 +7,13 @@
   font-size: 0.8rem;
 }
 
-.footer ul {
+.footer div {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.footer li {
+.footer div > * {
   color: var(--light-font);
   text-decoration: none;
   list-style-type: none;

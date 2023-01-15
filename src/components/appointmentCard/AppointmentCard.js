@@ -11,10 +11,10 @@ const AppointmentCard = (props) => {
           {date} / {time}
         </h4>
         <p>
-          <i class="fa-regular fa-user" /> {hairdresserName}
+          <i className="fa-regular fa-user" /> {hairdresserName}
         </p>
         <p>
-          <i class="fa-solid fa-scissors"></i> {style}
+          <i className="fa-solid fa-scissors"></i> {style}
         </p>
       </div>
       <Link
