@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import ServiceItem from "../components/bookingCards/ServiceItem";
 import EmployeeItem from "../components/bookingCards/EmployeeItem";
 import EmployeeCard from "../components/employeeCard/EmployeeCard";
+import SelectionCard from "../components/selectionCard/SelectionCard";
 
 const BookingEmployee = () => {
   const [selectedEmployee, setSelectedEmployee] = useState(null);
@@ -43,34 +44,12 @@ const BookingEmployee = () => {
             );
           })}
         </div>
-        <div className="container">
-          <h4>Ihre Auswahl</h4>
-          <div>
-            <ServiceItem service={service} />
-            {!selectedEmployee && (
-              <p className={styles.selectItemText}>Select a employee</p>
-            )}
-            <div onClick={() => setSelectedEmployee(null)}>
-              {selectedEmployee && (
-                <EmployeeItem
-                  employee={selectedEmployee}
-                  icon="fa-solid fa-circle-minus"
-                  danger="danger"
-                />
-              )}
-            </div>
-          </div>
-          <div className={styles.buttonsContainer}>
-            <Link to="/booking-service" className="btn btn-danger">
-              Go back
-            </Link>
-            {selectedEmployee && (
-              <Link to="/booking-calendar" className="btn btn-primary">
-                Next step
-              </Link>
-            )}
-          </div>
-        </div>
+        <SelectionCard
+          selectedEmployee={selectedEmployee}
+          setSelectedEmployee={setSelectedEmployee}
+          service={service}
+          step="employee"
+        />
       </div>
       <div>
         <h2>Unsere Mitarbeiter</h2>
@@ -85,3 +64,32 @@ const BookingEmployee = () => {
 };
 
 export default BookingEmployee;
+
+//<div className="container">
+//  <h4>Ihre Auswahl</h4>
+//  <div>
+//    <ServiceItem service={service} />
+//    {!selectedEmployee && (
+//      <p className={styles.selectItemText}>Select a employee</p>
+//    )}
+//    <div onClick={() => setSelectedEmployee(null)}>
+//      {selectedEmployee && (
+//        <EmployeeItem
+//          employee={selectedEmployee}
+//          icon="fa-solid fa-circle-minus"
+//          danger="danger"
+//        />
+//      )}
+//    </div>
+//  </div>
+//  <div className={styles.buttonsContainer}>
+//    <Link to="/booking-service" className="btn btn-danger">
+//      Go back
+//    </Link>
+//    {selectedEmployee && (
+//      <Link to="/booking-calendar" className="btn btn-primary">
+//        Next step
+//      </Link>
+//    )}
+//  </div>
+//</div>;

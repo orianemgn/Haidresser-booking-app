@@ -8,12 +8,15 @@
   width: 100%;
 }
 
+/*To delete after changing component*/
+
 .bookingContainer .selectItemText {
   font-size: 0.8rem;
   margin-bottom: 1rem;
   text-align: center;
 }
 
+/*To delete after changing component*/
 .buttonsContainer {
   display: flex;
   justify-content: space-evenly;
