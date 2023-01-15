@@ -9,17 +9,17 @@
   margin: 0.5rem auto;
 }
 
-.signUpForm {
+.registrationForm {
   display: flex;
   flex-direction: column;
 }
 
-.signUpForm > * {
+.registrationForm > * {
   margin: 1rem auto;
 }
 
-.signUpForm input[type="text"],
-.signUpForm input[type="email"] {
+.registrationForm input[type="text"],
+.registrationForm input[type="email"] {
   width: 80%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -27,10 +27,14 @@
   resize: vertical;
 }
 
+.loginLinks > * {
+  margin: 0 1rem;
+}
+
 /*Tablet */
 @media screen and (min-width: 700px) {
-  .signUpForm input[type="text"],
-  .signUpForm input[type="email"] {
+  .registrationForm input[type="text"],
+  .registrationForm input[type="email"] {
     width: 40%;
   }
 }

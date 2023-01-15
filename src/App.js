@@ -1,7 +1,7 @@
 import "./App.css";
 import LandingPage from "./pages/LandingPage";
-import SignUp from "./pages/SignUp";
-import Login from "./pages/Login";
+import SignUp from "./pages/registration/customer/SignUp";
+import Login from "./pages/registration/customer/Login";
 import CustomerAccount from "./pages/CustomerAccount";
 import BookingService from "./pages/BookingService";
 import BookingEmployee from "./pages/BookingEmployee";

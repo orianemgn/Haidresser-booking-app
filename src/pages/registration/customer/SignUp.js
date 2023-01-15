@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import styles from "./SignUp.module.css";
+import styles from "../Registration.module.css";
 
 const SignUp = () => {
   const handleSignUpSubmit = (e) => {
@@ -19,7 +19,7 @@ const SignUp = () => {
         <p>Registriere dich, um alle Funktionen nutzen zu können</p>
       </div>
       <form
-        className={styles.signUpForm}
+        className={styles.registrationForm}
         onSubmit={(e) => handleSignUpSubmit(e)}
       >
         <input type="email" name="email" id="email" placeholder="Email" />

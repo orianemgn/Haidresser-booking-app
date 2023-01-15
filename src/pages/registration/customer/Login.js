@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Login.module.css";
+import styles from "../Registration.module.css";
 import { Link } from "react-router-dom";
 
 const Login = () => {
@@ -18,7 +18,10 @@ const Login = () => {
         <h1>Wilkommen zurück</h1>
         <p>Melde dich an, um alle Funktionen nutzen zu können</p>
       </div>
-      <form className={styles.loginForm} onSubmit={(e) => handleLogin(e)}>
+      <form
+        className={styles.registrationForm}
+        onSubmit={(e) => handleLogin(e)}
+      >
         <input type="email" name="email" id="email" placeholder="Email" />
         <input
           type="text"

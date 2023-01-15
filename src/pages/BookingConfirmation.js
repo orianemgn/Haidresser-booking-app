@@ -31,7 +31,7 @@ const BookingConfirmation = () => {
             <Link to="/" className="btn btn-primary">
               Home
             </Link>
-            <Link to="/booking-employee" className="btn btn-primary">
+            <Link to="/account" className="btn btn-primary">
               My account
             </Link>
           </div>
